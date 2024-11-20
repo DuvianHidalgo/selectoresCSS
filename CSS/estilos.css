@@ -1,0 +1,86 @@
+/* selector universal */
+/* aplica los cambios a toda la pagina */
+*
+{
+    margin:0;
+    padding:0;
+}
+/*  */
+header
+{
+    background-color: rgb(84, 189, 154);
+}
+footer{
+    background-color: rgb(195, 160, 160);
+}
+/* selectores decendentes */
+/* en este caso los estilos solo se aplican al span, ya que no hay comas en el selector */
+article p span
+{
+    font-size: xx-large;
+    color: red;
+    font-family: impact;
+    font-weight: bold;
+}
+/* selector de clase */
+/* aplica los estilos a las etiquetas con el atributo class */
+.clase
+{
+    background-color: rgb(96, 246, 37);
+}
+/* selector id */
+/* aplica los estilos a las etiquetas con el atributo id(mala practica) */
+#menu
+{
+    background-color: yellow;
+    color: black;
+}
+/* selectores adyacentes */
+/*  */
+h1 + p
+{
+    text-decoration: underline;
+}
+/* colisiones */
+/* tiene prioridad una etiqueta que tiene un id aunque ya tenga un estilo */
+#p
+{
+    text-decoration: none;
+}
+/* selectores de seudoclases */
+.miA:hover
+{
+    background-color: green;
+    color: yellow;
+}
+.miA:visited
+{
+    background-color: tomato;
+    color: white;
+}
+img:hover
+{
+   opacity: 0;
+}
+/* seudoelementos */
+p:first-letter{
+ color: red;   
+}
+.id::before
+{
+    content:url("")
+}
+.i
+{
+    display: block;
+}
+@font-face
+{
+    font-family: lilita;
+    src:url(/fonts/LilitaOne-Regular.ttf);
+}
+
+.derechos
+{
+    font-family: lilita;
+}
